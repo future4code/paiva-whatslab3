@@ -12,25 +12,9 @@ height: 100vh;
 background-image: url(${PlanoDeFundo});
 flex-direction: column;
 
-.divInput { 
-    display: flex;
- }
-
 input {
     padding: 5px;
     flex-direction: row;
-}
-
-input:nth-child(1) {
-    width: 100px;
-}
-
-input:nth-child(2) {
-    flex-grow: 1;
-}
-
-button {
-    padding: 5px;
 }
 
 `
@@ -59,12 +43,27 @@ height: 90%;
 display: flex;
 flex-direction: column-reverse;
 
-span {
-    padding: 10px;
+p{
+    padding: 8px;
     background-color: white;
     display: inline-block;
     border-radius: 10px;
-
 }
-
+div {
+    margin: 5px 0;
+}
 `
+
+export const InputPrimeiro = styled.input`
+width: 100px;
+`
+
+export const InputMensagem = styled.input`
+flex: 1;`
+
+export const BotaoEnviar = styled.button`
+padding: 5px`
+
+export const DivInput = styled.div` 
+    display: flex;
+ `

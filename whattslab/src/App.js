@@ -1,11 +1,8 @@
-import { MainContainer, CampoMensagem, Header } from './styles/styled'
+import { MainContainer, CampoMensagem, Header, InputPrimeiro, InputMensagem } from './styles/styled'
 import GlobalStyle from './styles/global';
 import IconUser from './img/icon.png'
 import UenoUser from './img/ueno.png'
 import Conversa from './components/conversa'
-
-
-
 
 function App() {
   return (
@@ -17,9 +14,8 @@ function App() {
             <h2>Daniel Ueno</h2>
             <p>Visto por último hoje às 11:11</p>
           </div>
-
         </Header>
-
+        {/* 
         <CampoMensagem>
           <div>
             <span>Vai codando, ta fogo aqui no cs, time muito fera xD</span>
@@ -28,11 +24,11 @@ function App() {
         </CampoMensagem>
 
         <div className="divInput">
-          <input placeholder="Usuário" />
-          <input placeholder="Digite uma Mensagem" />
+          <InputPrimeiro placeholder="Usuário" />
+          <InputMensagem placeholder="Digite uma Mensagem" />
           <button>Enviar</button>
-        </div>
-
+        </div> */}
+        <Conversa></Conversa>
       </MainContainer>
       <GlobalStyle />
     </div>
