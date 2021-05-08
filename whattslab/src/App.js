@@ -2,6 +2,10 @@ import { MainContainer, CampoMensagem, Header } from './styles/styled'
 import GlobalStyle from './styles/global';
 import IconUser from './img/icon.png'
 import UenoUser from './img/ueno.png'
+import Conversa from './components/conversa'
+
+
+
 
 function App() {
   return (
