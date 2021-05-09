@@ -1,7 +1,6 @@
 import { MainContainer, CampoMensagem, Header, InputPrimeiro, InputMensagem } from './styles/styled'
 import GlobalStyle from './styles/global';
 import IconUser from './img/icon.png'
-import UenoUser from './img/ueno.png'
 import Conversa from './components/conversa'
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div className="App">
       <MainContainer>
         <Header>
-          <img src={UenoUser} />
+          <img src={IconUser} />
           <div>
             <h2>Daniel Ueno</h2>
             <p>Visto por último hoje às 11:11</p>
