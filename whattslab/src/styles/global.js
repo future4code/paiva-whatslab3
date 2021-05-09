@@ -12,9 +12,11 @@ export default createGlobalStyle`
 html, #root {
     max-width: 100vw;
     min-height: 100vh;
+    font-size: 85%;
 }
 body {
     width: 100%;
     height: 100%;
+    font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 `
