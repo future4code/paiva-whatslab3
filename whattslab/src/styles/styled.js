@@ -54,6 +54,12 @@ p{
 }
 div {
     margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+span {
+    font-size: 0.6rem;
 }
 `
 
@@ -80,24 +86,21 @@ justify-content: center;
 // Container Conversas
 
 export const ConversaContainer = styled.div`
-width: 450px;
+width: 300px;
 background-color: white;
 height: 100vh;
 
 header{ 
 display: grid;
 width: 95%;
-height: 15vh;
+height: 16vh;
 background-color: #25D366;
 border-radius: 10px 10px 25px 25px;
-margin: 4px auto;
+margin: 5px auto;
 margin-bottom: 10px;
 
 h2{
-    /* font-size: 1.1rem; */
-    /* font-weight: 800; */
     color: #F7E20E;
-    /* letter-spacing: 1px; */
     margin-left: 5px;
 }
 img {
@@ -160,7 +163,7 @@ align-items: center;
 margin: 5px auto;
 width: 100%;
 padding: 1px;
-
+}
 .search-style {
     border-radius: 5px;
     display: flex;
@@ -176,7 +179,7 @@ padding: 1px;
     }
 }
 `
-// Chats
+/*  Chats */
 
 export const ChatContainer = styled.div`
 width: 95%;

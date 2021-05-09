@@ -1,6 +1,11 @@
 import React from 'react'
 import { MainContainer, CampoMensagem, InputPrimeiro, InputMensagem, BotaoEnviar, DivInput } from '../styles/styled'
 import HeaderConversa from '../components/header/header'
+const date = new Date().getDate();
+const hora = new Date().getHours();
+const min = new Date().getMinutes();
+const dataHora = `${hora}:${min}`
+
 export default class Conversa extends React.Component {
 
   state = {
@@ -48,9 +53,10 @@ export default class Conversa extends React.Component {
           <CampoMensagem>
             {this.state.messages.map((message, index) => {
               return <div>
-                <p key={index}>
-                  <strong> {message.user} </strong>: {message.text}
-                </p>
+                <div class="campo-mensagem-msg-align">
+                  <p key={index}>
+                    <strong> {message.user} </strong> <br /> {message.text} <span>{dataHora}</span></p>
+                </div>
               </div>
             })}
 
